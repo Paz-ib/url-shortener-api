@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using UrlShortenerApi.Data;
+using UrlShortenerApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseInMemoryDatabase("UrlShortenerDb"));
+
+builder.Services.AddScoped<UrlService>();
 
 var app = builder.Build();
 
