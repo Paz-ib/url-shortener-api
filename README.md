@@ -32,14 +32,17 @@ UrlShortenerApi
 ├── Program.cs
 
 
-API Endpoints
+
+## API Endpoints
 
 ### Create Short URL
-
 **POST** `/api/url`
 
 Example:
+
+```http
 POST /api/url?originalUrl=https://google.com
+```
 
 Response:
 ```json
@@ -49,33 +52,35 @@ Response:
   "shortCode": "abc123",
   "createdAt": "2026-03-22T..."
 }
+```
 
-Get URL by Code
-GET /api/url/{code}
+### Get URL by Code
+**GET** `/api/url/{code}`
 
-Redirect to Original URL
-GET /r/{code}
+### Redirect to Original URL
+**GET** `/r/{code}`
 This endpoint redirects the user to the original URL.
 
-How to Run
-git clone https://github.com/YOUR-USERNAME/url-shortener-api.git
+## How to Run
+```bash
+git clone https://github.com/Paz-ib/url-shortener-api.git
 cd url-shortener-api
 dotnet run
+```
 
 Then open:
 http://localhost:5019/swagger
 
 Future Improvements
-Use persistent database (SQL Server / PostgreSQL)
-Add URL validation
-Implement DTOs
-Add click tracking
-Deploy to cloud (AWS / Azure)
+- Use persistent database (SQL Server / PostgreSQL)
+- Add URL validation
+- Implement DTOs
+- Add click tracking
+- Deploy to cloud (AWS / Azure)
+
 
 ## API Preview
-
 ![Swagger UI](screenshots/swagger.png)
 
-
 Author
-María Paz Ibarra.
+María Paz Ibarra
