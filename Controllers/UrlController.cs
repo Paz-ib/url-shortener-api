@@ -31,5 +31,18 @@ namespace UrlShortenerApi.Controllers
 
             return Ok(url);
         }
+
+        [HttpGet("/r/{code}")]
+        public IActionResult RedirectToOriginal(string code)
+        {
+            var url = _urlService.GetByCode(code);
+
+            if (url == null)
+                return NotFound();
+
+            return Redirect(url.OriginalUrl);
+        }
+
+
     }
 }
