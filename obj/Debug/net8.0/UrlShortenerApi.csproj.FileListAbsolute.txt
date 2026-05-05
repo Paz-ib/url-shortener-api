@@ -31,3 +31,4 @@
 /Users/mariapazibarra/Desktop/dev/csharp/projects/urlshortenerapi/UrlShortenerApi/obj/Debug/net8.0/UrlShortenerApi.pdb
 /Users/mariapazibarra/Desktop/dev/csharp/projects/urlshortenerapi/UrlShortenerApi/obj/Debug/net8.0/UrlShortenerApi.genruntimeconfig.cache
 /Users/mariapazibarra/Desktop/dev/csharp/projects/urlshortenerapi/UrlShortenerApi/obj/Debug/net8.0/ref/UrlShortenerApi.dll
+/Users/mariapazibarra/Desktop/dev/csharp/projects/urlshortenerapi/UrlShortenerApi/obj/Debug/net8.0/UrlShortenerApi.sourcelink.json
